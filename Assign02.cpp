@@ -1,3 +1,8 @@
+// Assignment 2 Solution: Roman to Decimal
+// 
+// Krzysztof Szczurowski
+// Sept. 30th, 2019
+
 #include <iostream>
 #include <cctype>
 
