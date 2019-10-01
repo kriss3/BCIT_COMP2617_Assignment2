@@ -1,6 +1,7 @@
 // Assignment 2 Solution: Roman to Decimal
 // 
-// Krzysztof Szczurowski
+// Krzysztof Szczurowski;
+// Student Id: A01013054;
 // Sept. 30th, 2019
 
 #include <iostream>
@@ -15,12 +16,12 @@ int main()
 	cout << "10 Roman numeral values will be input and converted into\ntheir equivalent Hindu-Arabic numeric values.\n" ;
 
 	int counter; // couter of the display purposes;
-	for (int i = 0; i < NUMBERAL_INPUT; i++)  //iteratiing 10 times as per app specification;
+	for (int i = 0; i < NUMBERAL_INPUT; i++)  //iterating 10 times as per app specification;
 	{
 		//initial setup of required variables used in an app;
 		int currentChar = 0;	// current value of a Roman character from the input;
 		int prevChar = 0;		// value of the previous Roman character from the input
-		int result = 0;			// parial result from the calculation (either the number analyzed or a subtraction i.e. IX)
+		int result = 0;			// partial result from the calculation (either the number analyzed or a subtraction i.e. IX)
 		int sum = 0;				// total sum of Roman digits;
 		bool errorFlag = false;// flag is to protect from displaying the rest of calculation of the Roman number, in case there is an input error;
 										// initial set to false as no error assumed;
@@ -186,7 +187,7 @@ int main()
 				prevChar = currentChar;
 				cout << 'M';
 				break;
-			default:							// handlig input character erros;
+			default:							// handling input character errors;
 				cerr << static_cast<char>(testValue) << " Error - last character was not valid!!!\n";
 				errorFlag = true;		//	setting errorFlag to skip calculating the rest of the input characters, if any are valid;
 				break;
